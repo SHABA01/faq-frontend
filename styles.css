@@ -1,34 +1,98 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
 }
+
+.faq-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* For desktop screens */
+@media (min-width: 768px) {
+    .faq-background .desktop-bg {
+        display: block;
+    }
+
+    .faq-background .mobile-bg {
+        display: none;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .faq-background .desktop-bg {
+        display: none;
+    }
+
+    .faq-background .mobile-bg {
+        display: block;
+    }
+}
+
 
 .faq-container {
     width: 80%;
-    max-width: 600px;
+    max-width: 1440px;
+    background-color: hsl(275, 100%, 97%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+}
+
+.faq-container-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.faq-container-header img {
+    margin-right: 10px;
+}
+
+.faq-container-header div {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+
+.faq-container-body {
+    padding: 20px;
 }
 
 .faq-item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+    border: 1px solid hsl(292, 16%, 49%);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .faq-question {
-    padding: 10px;
-    background-color: #eee;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
     cursor: pointer;
     outline: none;
+    font-size: 16px;
 }
 
 .faq-answer {
     display: none;
-    padding: 10px;
+    padding: 20px;
+    font-size: 16px;
 }
 
 .faq-item.active .faq-answer {
@@ -37,6 +101,12 @@ body {
 
 .faq-question:hover,
 .faq-question:focus {
-    background-color: #ddd;
+    background-color: hsl(275, 100%, 97%);
     outline: none;
+}
+
+.attribution {
+    font-size: 14px;
+    color: hsl(292, 16%, 49%);
+    margin-top: 20px;
 }
