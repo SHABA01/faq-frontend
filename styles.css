@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -92,5 +93,8 @@ body {
 .attribution {
     font-size: 14px;
     color: hsl(292, 16%, 49%);
-    margin-top: 20px;
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: hsl(275, 100%, 97%);
 }
