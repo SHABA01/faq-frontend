@@ -11,7 +11,8 @@ body {
     background-image: url('./assets/images/background-pattern-desktop.svg'); /* Default image for all screen sizes */
     background-size: 30%;
     /*background-size: cover;*/
-    background-position: center;
+    background-position: top;
+    /*background-position: center;*/
     background-repeat: no-repeat;
 }
 
