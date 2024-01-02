@@ -6,26 +6,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-color: hsl(0, 0%, 100%);
-    background-image: url('./assets/images/background-pattern-desktop.svg'); /* Default image for all screen sizes */
-    background-size: 30%;
-    /*background-size: cover;*/
-    background-position: center;
+}
+
+.bg-image {
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* For screens with a width of 768px or more (desktop screens) */
 @media (min-width: 768px) {
-    body {
-        background-image: url('./assets/images/background-pattern-desktop.svg'); /* Desktop image for screens with a width of 768px or more */
+    .bg-image {
+        background-image: url("./assets/images/background-pattern-desktop.svg"); /* Desktop image for screens with a width of 768px or more */
     }
 }
 
 /* For screens with a width less than 768px (mobile screens) */
 @media (max-width: 767px) {
-    body {
-        background-image: url('./assets/images/background-pattern-mobile.svg'); /* Mobile image for screens with a width less than 768px */
+    .bg-image {
+        background-image: url("./assets/images/background-pattern-mobile.svg"); /* Mobile image for screens with a width less than 768px */
     }
 }
 
