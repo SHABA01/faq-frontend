@@ -9,7 +9,8 @@ body {
     min-height: 100vh;
     background-color: hsl(0, 0%, 100%);
     background-image: url('./assets/images/background-pattern-desktop.svg'); /* Default image for all screen sizes */
-    background-size: cover;
+    background-size: 30%;
+    /*background-size: cover;*/
     background-position: center;
     background-repeat: no-repeat;
 }
