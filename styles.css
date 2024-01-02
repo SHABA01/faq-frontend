@@ -11,8 +11,7 @@ body {
     background-image: url('./assets/images/background-pattern-desktop.svg'); /* Default image for all screen sizes */
     background-size: 30%;
     /*background-size: cover;*/
-    background-position: top;
-    /*background-position: center;*/
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -52,7 +51,7 @@ body {
 }
 
 .faq-container-header div {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     color: hsl(292, 42%, 14%);
 }
@@ -88,7 +87,7 @@ body {
 
 .faq-question:hover,
 .faq-question:focus {
-    background-color: hsl(275, 100%, 97%);
+    color: hsl(292, 16%, 49%);
     outline: none;
 }
 
