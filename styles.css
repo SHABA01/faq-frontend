@@ -48,11 +48,11 @@ body {
 }
 
 /* For screens with a width less than 768px (mobile screens) */
-/*@media (max-width: 767px) {
+@media (max-width: 767px) {
     .faq-container {
         width: 10%;
     }
-}*/
+}
 
 .faq-container-header {
     width: auto;
