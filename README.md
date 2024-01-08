@@ -29,11 +29,11 @@ Users should be able to:
 
 ### Screenshot
 
-                                Desktop view
+                                                          Desktop view
 ![faq-accordion-desktop-screenshot.png](./assets/images/faq-accordion-desktop-screenshot.png)
 
 
-                                Mobile view
+                                                           Mobile view
 ![faq-accordion-mobile-screenshot.jpg](./assets/images/faq-accordion-mobile-screenshot.jpg)
 
 
